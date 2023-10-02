@@ -6,7 +6,7 @@
     <title>Card system</title>
 </head>
 <body>
-    <section>
+    <section class="mainbody">
         <div>
             <form method="post">
                 <label>
