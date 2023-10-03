@@ -14,14 +14,13 @@
         $imagefiletmp = $image['tmp_name'];
         $filename_separate = explode('.', $imgefilesname);
         $file_extension = strtolower($filename_separate[1]);
+        $extension = array('jpeg', 'png', 'jpg');
 
         $extension = array('jpeg', 'png', 'jpg');
         $uploadimage = 'uploads/'.$imgefilesname;
         move_uploaded_file($imagefiletmp,$uploadimage);
-        $ffff = 'images';
-        $sql = $card->query("INSERT INTO userinfo SET `name`='$name', phone='$phone', email='$email', house='$house', photos='$uploadimage' ")
-        
-    
+        //$ffff = 'images';
+        $sql = $card->query(" INSERT INTO `userinfo` SET `name`='$name', phone='$phone', email='$email', house='$house', photos='$uploadimage'")
     }
 
 ?>
