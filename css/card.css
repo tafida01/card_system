@@ -55,5 +55,50 @@ em {
 }
 
 span {
-    color: beige;
+    color: rgb(0, 0, 0);
+}
+
+.user-veiw {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: solid 1px rgb(53, 53, 53);
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.user-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    padding-top: 10px;
+    /* border: solid 1px rgb(255, 0, 0); */
+}
+
+.user-image {
+    /* border: solid 1px rgb(113, 56, 56); */
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.user-information{
+    /* border: solid 1px black; */
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    grid-gap: 5px;
+    height: 100%;
+    width: 100%;
+    margin-right: auto;
+}
+
+.user-information span {
+    text-decoration: underline;
 }
